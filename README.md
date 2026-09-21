@@ -173,7 +173,7 @@ The enclosure was designed using parametric 3D CAD and fabricated via **Fused De
 
 ### Design Features
 - **Integrated Mounting Bosses**: Internal screw bosses to secure the PCB, Arduino Nano, and step-up transformer.
-- **Port Cutouts**: Dedicated cutouts for electrode 3.5mm / snap output sockets, tactile power switch, and Mini-USB charging.
+- **Port Cutouts**: Dedicated cutouts for electrode 3.5 mm/snap output sockets, tactile power switch, and Mini-USB charging.
 - **Snap-fit & Screw Fastening**: Two-part clamshell case with rounded fillets for ergonomic handheld comfort.
 
 ---
@@ -206,8 +206,8 @@ TENS/
 ├── mobile-app/
 │   └── README.md                      # Flutter mobile app architecture & protocol
 └── media/
-    ├── demo.mp4                       # Working prototype demonstration video
-    ├── record.mp4                     # Video recording of bench test
+    ├── demo.mp4                       # showcasing video
+    ├── record.mp4                     # Video recording of presentation
     ├── prototype_assembly.jpeg        # Internal hardware assembly photo
     ├── prototype_closeup.jpg          # Prototype close-up photo
     └── first_place_award.jpg          # 1st place award certificate
@@ -221,7 +221,7 @@ TENS/
 - **Teaching Assistants**:
   - Eng. Aya Abdelmonem
   - Eng. Shrouk Mohamed
-- **Team**: Biomedical Engineering & Embedded Systems Graduation Project Team
+- **Team**: Abdallah Aboalkhair - Youssef Reda - Hussein Ramadan - Mohamed Alaggouri - Reem Elsheikh - Hanan Ahmed - Mariam Soaudy - Israa Elmorsy
 
 ---
 
