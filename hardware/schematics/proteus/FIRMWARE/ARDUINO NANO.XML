@@ -1,0 +1,360 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<PROJECT IID="5" BUILDPATH="C:/Users/Hussein/AppData/Local/Temp/VSM Studio/64ae9fcf64ce493583b3b3e9d6aa93f3/ARDUINO NANO" VERSION="821" TYPE="SOURCE" NAME="ARDUINO NANO" CONFIGURATION="Debug">
+ <FILES ATTACH="1">
+  <FILE ATTACH="1" GROUP="Source Files" NAME="Arduino Nano/main.ino"/>
+  <FILE ATTACH="1" GROUP="Firmware Files" NAME="ARDUINO NANO/Debug/Debug.elf" FIRMWARE="1"/>
+ </FILES>
+ <CONFIGURATION CRC="c761c9a8c9e0acde2152b3ceea177190" TARGET="Debug" COMPILER="Arduino AVR (Proteus)" NAME="Debug">
+  <CONTROLLER FAMILY="ARDUINO" TYPE="Arduino Nano"/>
+  <FILE TOOL="LD" NAME="ARDUINO NANO/Debug/Debug.elf">
+   <FILE TOOL="CC" NAME="ARDUINO NANO/Debug/main.o">
+    <FILE TOOL="APP" NAME="ARDUINO NANO/Debug/main.cpp">
+     <FILE NAME="Arduino Nano/main.ino"/>
+    </FILE>
+   </FILE>
+  </FILE>
+  <OPTION DEFAULT="1" TOOL="LD" NAME="-Wl," VALUE="--gc-sections"/>
+  <OPTION DEFAULT="1" TOOL="LD" NAME="" VALUE="-lm"/>
+  <OPTION DEFAULT="1" TOOL="LD" NAME="-mmcu=" VALUE="atmega328p"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-W" VALUE="all"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-g" VALUE="dwarf-2"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-fno-exceptions"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-ffunction-sections"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-fdata-sections"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-D" VALUE="F_CPU=%CLOCK%"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-I " VALUE=".."/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-I " VALUE="%DRIVERS_DIR_QUOTED%"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-D" VALUE="ARDUINO_ARCH_AVR"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="" VALUE="@arduino/libs.inc"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-std=gnu++11"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-fno-threadsafe-statics"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-O" VALUE="0"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-mmcu=" VALUE="atmega328p"/>
+  <OPTION DEFAULT="1" TOOL="APP" NAME="-C " VALUE="%BOARD%"/>
+  <OPTION DEFAULT="1" TOOL="APP" NAME="-T " VALUE="-std=gnu++11"/>
+  <OPTION DEFAULT="1" TOOL="APP" NAME="-T " VALUE="-fno-threadsafe-statics"/>
+  <OPTION DEFAULT="1" TOOL="APP" NAME="-N " VALUE="atmega328p"/>
+  <OPTION DEFAULT="1" TOOL="APP" NAME="-F " VALUE="%CLOCK%"/>
+  <OPTION DEFAULT="1" TOOL="APP" NAME="-U " VALUE="%DRIVERS_QUOTED_DIR%"/>
+ </CONFIGURATION>
+ <CONFIGURATION CRC="c761c9a8c9e0acde2152b3ceea177190" TARGET="Release" COMPILER="Arduino AVR (Proteus)" NAME="Release">
+  <CONTROLLER FAMILY="ARDUINO" TYPE="Arduino Nano"/>
+  <FILE TOOL="LD">
+   <FILE TOOL="CC">
+    <FILE TOOL="APP">
+     <FILE NAME="Arduino Nano/main.ino"/>
+    </FILE>
+   </FILE>
+  </FILE>
+  <OPTION DEFAULT="1" TOOL="LD" NAME="-Wl," VALUE="--gc-sections"/>
+  <OPTION DEFAULT="1" TOOL="LD" NAME="" VALUE="-lm"/>
+  <OPTION DEFAULT="1" TOOL="LD" NAME="-mmcu=" VALUE="atmega328p"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-W" VALUE="all"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-g" VALUE="dwarf-2"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-fno-exceptions"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-ffunction-sections"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-fdata-sections"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-D" VALUE="F_CPU=%CLOCK%"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-I " VALUE=".."/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-I " VALUE="%DRIVERS_DIR_QUOTED%"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-D" VALUE="ARDUINO_ARCH_AVR"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="" VALUE="@arduino/libs.inc"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-std=gnu++11"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-fno-threadsafe-statics"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-O" VALUE="s"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-mmcu=" VALUE="atmega328p"/>
+  <OPTION DEFAULT="1" TOOL="APP" NAME="-C " VALUE="%BOARD%"/>
+  <OPTION DEFAULT="1" TOOL="APP" NAME="-T " VALUE="-std=gnu++11"/>
+  <OPTION DEFAULT="1" TOOL="APP" NAME="-T " VALUE="-fno-threadsafe-statics"/>
+  <OPTION DEFAULT="1" TOOL="APP" NAME="-N " VALUE="atmega328p"/>
+  <OPTION DEFAULT="1" TOOL="APP" NAME="-F " VALUE="%CLOCK%"/>
+  <OPTION DEFAULT="1" TOOL="APP" NAME="-U " VALUE="%DRIVERS_QUOTED_DIR%"/>
+ </CONFIGURATION>
+ <PROPERTY NAME="BOARD" VALUE="pro328"/>
+ <PROPERTY NAME="CLOCK" VALUE="16000000"/>
+ <HARDWARE CONTROLLER="Arduino Nano">
+  <PERIPHERAL DESC="Arduino Processor" VALID="1" ENABLED="1" BUILTIN="1" TYPE="CPU" ID="{b5607f2f-f0ad-4dab-af83-519faf92e92f}" NAME="cpu" FILE="Arduino Nano" EID="00000005" OPTIONAL="0">
+   <INTERFACE EXTERNAL="Cpu" OBJECT="CPU"/>
+   <DRIVER RAM="512" HEADER="cpu.h">
+    <!-- Reserve 512 bytes for core libraries, stack, heap etc. -->
+    <REQUIRE HEADER="core.h"/>
+    <ENUMERATION NAME="PINMODE">
+     <CONSTANT NAME="INPUT" VALUE="INPUT"/>
+     <CONSTANT NAME="OUTPUT" VALUE="OUTPUT"/>
+     <CONSTANT NAME="PULLUP" VALUE="INPUT_PULLUP"/>
+    </ENUMERATION>
+    <ENUMERATION NAME="PINSTATE">
+     <CONSTANT NAME="LOW" VALUE="LOW"/>
+     <CONSTANT NAME="HIGH" VALUE="HIGH"/>
+    </ENUMERATION>
+    <ENUMERATION NAME="REFMODE">
+     <CONSTANT NAME="DEFAULT" VALUE="DEFAULT"/>
+     <CONSTANT NAME="INTERNAL" VALUE="INTERNAL"/>
+     <CONSTANT NAME="EXTERNAL" VALUE="EXTERNAL"/>
+    </ENUMERATION>
+    <ENUMERATION NAME="INTID">
+     <CONSTANT NAME="INT0" VALUE="0"/>
+     <CONSTANT NAME="INT1" VALUE="1"/>
+    </ENUMERATION>
+    <ENUMERATION NAME="INTMODE">
+     <CONSTANT NAME="LOW" VALUE="LOW"/>
+     <CONSTANT NAME="CHANGE" VALUE="CHANGE"/>
+     <CONSTANT NAME="FALLING" VALUE="FALLING"/>
+     <CONSTANT NAME="RISING" VALUE="RISING"/>
+    </ENUMERATION>
+    <METHOD DESC="Set pin to input or output" NAME="pinMode">
+     <PARAMETER DESC="Arduino digital I/O number" TYPE="INTEGER" NAME="pin"/>
+     <PARAMETER DESC="Input or output mode" TYPE="PINMODE" NAME="mode"/>
+    </METHOD>
+    <METHOD DESC="Set reference for analog inputs&#x9;" NAME="analogReference">
+     <PARAMETER DESC="Reference mode" TYPE="REFMODE" NAME="mode"/>
+    </METHOD>
+    <METHOD DESC="Set pwm waveform on output pin" NAME="analogWrite">
+     <PARAMETER DESC="Arduino digital I/O number" TYPE="INTEGER" NAME="pin"/>
+     <PARAMETER DESC="PWM value" TYPE="INTEGER" NAME="value"/>
+    </METHOD>
+    <METHOD DESC="Read voltage at analogue pin" NAME="analogRead">
+     <PARAMETER DESC="Arduino analogue input number" TYPE="INTEGER" NAME="ain"/>
+     <RETURN DESC="Analogue input value" DEFAULT="ain" TYPE="INTEGER" NAME="value"/>
+    </METHOD>
+    <METHOD DESC="Set state of digital output pin" NAME="digitalWrite">
+     <PARAMETER DESC="Arduino digital I/O number" TYPE="INTEGER" NAME="pin"/>
+     <PARAMETER DESC="Logic state" TYPE="BOOLEAN" NAME="state"/>
+    </METHOD>
+    <METHOD DESC="Read state of digital pin" NAME="digitalRead">
+     <PARAMETER DESC="Arduino digital I/O number" TYPE="INTEGER" NAME="pin"/>
+     <RETURN DESC="Pin state" DEFAULT="state" TYPE="BOOLEAN" NAME="state"/>
+    </METHOD>
+    <METHOD DESC="Mesaure a pulse on the specified digital pin with timeout" NAME="pulseIn">
+     <PARAMETER DESC="Arduino digital I/O number" TYPE="INTEGER" NAME="pin"/>
+     <PARAMETER DESC="Pulse type" DEFAULT="HIGH" TYPE="PINSTATE" NAME="type"/>
+     <PARAMETER DESC="Time to wait in microseconds" DEFAULT="1000000" TYPE="INTEGER" NAME="timeout"/>
+     <RETURN DESC="Pulse length in microseconds" DEFAULT="duration" TYPE="INTEGER" NAME="duration"/>
+    </METHOD>
+    <METHOD DESC="Read number of milliseconds since last reset" NAME="millis">
+     <RETURN DESC="Millseconds" DEFAULT="millis" TYPE="INTEGER" NAME="millis"/>
+    </METHOD>
+    <METHOD DESC="Initialise the random number generator" NAME="randomSeed">
+     <PARAMETER DESC="Seed value to start the pseudo-random number generation with" TYPE="INTEGER" NAME="seed"/>
+    </METHOD>
+    <METHOD DESC="Set the mode for a specified interrupt." NAME="enableInterrupt">
+     <PARAMETER DESC="Interrupt source" TYPE="INTID" NAME="id"/>
+     <PARAMETER DESC="Interrupt mode" TYPE="INTMODE" NAME="mode"/>
+    </METHOD>
+    <METHOD DESC="Disable the specified interrupt" NAME="disableInterrupt">
+     <PARAMETER DESC="Interrupt source" TYPE="INTID" NAME="id"/>
+    </METHOD>
+    <METHOD DESC="Set state of on-board LED" NAME="setBuiltInLED">
+     <PARAMETER DESC="Logic state" DEFAULT="ON" TYPE="BOOLEAN" NAME="state"/>
+    </METHOD>
+    <METHOD DESC="Write information to the simulation log." NAME="debug">
+     <PARAMETER DESC="Items to output." TYPE="LIST"/>
+    </METHOD>
+    <METHOD DESC="Play tone" NAME="tone">
+     <PARAMETER DESC="Arduino digital I/O number" TYPE="INTEGER" NAME="pin"/>
+     <PARAMETER DESC="Frequency" TYPE="INTEGER" NAME="frequency"/>
+     <PARAMETER DESC="Duration" TYPE="INTEGER" NAME="duration"/>
+    </METHOD>
+    <METHOD DESC="Stop tone" NAME="noTone">
+     <PARAMETER DESC="Arduino digital I/O number" TYPE="INTEGER" NAME="pin"/>
+    </METHOD>
+    <INTERRUPT DESC="RESET" HOOK="attachResetHandler"/>
+    <INTERRUPT EXCLUSIVE="1" DESC="INT0 (IO2)" HOOK="attachInterruptHandler&lt;0>"/>
+    <INTERRUPT EXCLUSIVE="1" DESC="INT1 (IO3)" HOOK="attachInterruptHandler&lt;1>"/>
+   </DRIVER>
+  </PERIPHERAL>
+  <PERIPHERAL DESC="Timer One" VALID="1" ENABLED="0" BUILTIN="1" TYPE="TIMER1" ID="{ead95d57-d1a2-4162-8ce0-4d98d25245ad}" NAME="timer1" FILE="Arduino Nano" EID="00000005" OPTIONAL="1">
+   <INTERFACE EXTERNAL="Timer1" OBJECT="TimerOne"/>
+   <DRIVER HEADER="TimerOne.h">
+    <METHOD DESC="Initialize the timer with a specified period" NAME="initialize">
+     <PARAMETER DESC="Period in microseconds" DEFAULT="1000000" TYPE="INTEGER" NAME="period"/>
+    </METHOD>
+    <METHOD DESC="Set a new period in microseconds" NAME="setPeriod">
+     <PARAMETER DESC="Period in microseconds" TYPE="INTEGER" NAME="period"/>
+    </METHOD>
+    <METHOD DESC="Start the timer" NAME="start"/>
+    <METHOD DESC="Stop the timer" NAME="stop"/>
+    <METHOD DESC="Restart the timer at count of zero" NAME="restart"/>
+    <METHOD DESC="Resume counting" NAME="resume"/>
+    <METHOD DESC="Read the timer value in microseconds" NAME="read">
+     <RETURN DESC="Counter value" DEFAULT="count" TYPE="INTEGER" NAME="state"/>
+    </METHOD>
+    <METHOD DESC="Set up a PWM output" NAME="pwm">
+     <PARAMETER DESC="Pin for PWM output" TYPE="INTEGER" NAME="pin"/>
+     <PARAMETER DESC="Duty cycle (0-1023)" TYPE="INTEGER" NAME="duty"/>
+     <PARAMETER DESC="Period in microseconds)" DEFAULT="-1" TYPE="INTEGER" NAME="period"/>
+    </METHOD>
+    <METHOD DESC="Cancel PWM output" NAME="disablePwm">
+     <PARAMETER DESC="Pin for PWM output" TYPE="INTEGER" NAME="pin"/>
+    </METHOD>
+    <METHOD DESC="Set a new PWM duty cycle" NAME="setPwmDuty">
+     <PARAMETER DESC="Pin for PWM output" TYPE="INTEGER" NAME="pin"/>
+     <PARAMETER DESC="Duty cycle (0-1023)" TYPE="INTEGER" NAME="duty"/>
+    </METHOD>
+    <INTERRUPT DESC="Timer Match" HOOK="attachInterrupt" PERIODIC="1"/>
+   </DRIVER>
+  </PERIPHERAL>
+  <PERIPHERAL DESC="SPI Port" VALID="1" ENABLED="0" BUILTIN="1" TYPE="SPI" ID="{671d0eb7-fe55-429b-8dad-5f74a1f3a36b}" NAME="spi" FILE="Arduino Nano" EID="00000005" OPTIONAL="1">
+   <INTERFACE EXTERNAL="Spi" OBJECT="SpiPort">
+    <SETUP NAME="begin"/>
+   </INTERFACE>
+   <DRIVER HEADER="spiport.h">
+    <REQUIRE HEADER="core.h"/>
+    <REQUIRE HEADER="spi.h"/>
+    <ENUMERATION NAME="CLOCK">
+     <CONSTANT NAME="CLOCK1MHZ" VALUE="1000000L"/>
+     <CONSTANT NAME="CLOCK4MHZ" VALUE="4000000L"/>
+     <CONSTANT NAME="CLOCK8MHZ" VALUE="8000000L"/>
+    </ENUMERATION>
+    <ENUMERATION NAME="BITORDER">
+     <CONSTANT NAME="LSBFIRST" VALUE="0"/>
+     <CONSTANT NAME="MSBFIRST" VALUE="1"/>
+    </ENUMERATION>
+    <ENUMERATION NAME="SPIMODE">
+     <CONSTANT NAME="SPIMODE0" VALUE="0x00"/>
+     <CONSTANT NAME="SPIMODE1" VALUE="0x04"/>
+     <CONSTANT NAME="SPIMODE2" VALUE="0x08"/>
+     <CONSTANT NAME="SPIMODE3" VALUE="0x0C"/>
+    </ENUMERATION>
+    <METHOD DESC="Configure the SPI Hardware" NAME="setup">
+     <PARAMETER DESC="SPI Clock Speed" DEFAULT="CLOCK4MHZ" TYPE="CLOCK" NAME="clock"/>
+     <PARAMETER DESC="Bit Order" DEFAULT="MSBFIRST" TYPE="BITORDER" NAME="order"/>
+     <PARAMETER DESC="SPI MODE (Clock Phase &amp; Polarity)" DEFAULT="SPIMODE0" TYPE="SPIMODE" NAME="mode"/>
+    </METHOD>
+    <METHOD DESC="Start a bus transaction (SS low)" NAME="beginTransaction">
+     <PARAMETER DESC="Pin to use for SS" DEFAULT="10" TYPE="INTEGER" NAME="pin"/>
+    </METHOD>
+    <METHOD DESC="End a bus transaction (SS high)" NAME="endTransaction"/>
+    <METHOD DESC="Send 8 bit command data, received data is ignored" NAME="send">
+     <PARAMETER DESC="Data to transmit" TYPE="LIST"/>
+    </METHOD>
+    <METHOD DESC="Send 16 bit command data, received data is ignored" NAME="send16">
+     <PARAMETER DESC="Data to transmit" TYPE="LIST"/>
+    </METHOD>
+    <METHOD DESC="Send/Receive 8 bits of data" NAME="transfer">
+     <PARAMETER DESC="Data to transmit" TYPE="INTEGER" NAME="data"/>
+     <RETURN DESC="Data to receive" TYPE="INTEGER" NAME="data"/>
+    </METHOD>
+    <METHOD DESC="Send/Receive 16 bits of data" NAME="transfer16">
+     <PARAMETER DESC="Data to transmit" TYPE="INTEGER" NAME="data"/>
+     <RETURN DESC="Data to receive" TYPE="INTEGER" NAME="data"/>
+    </METHOD>
+   </DRIVER>
+  </PERIPHERAL>
+  <PERIPHERAL DESC="I2C Port" VALID="1" ENABLED="0" BUILTIN="1" TYPE="I2C" ID="{1862ef71-5609-4a1c-9ae0-8bfb4511fbe6}" NAME="i2c" FILE="Arduino Nano" EID="00000005" OPTIONAL="1">
+   <INTERFACE EXTERNAL="I2C" OBJECT="I2CPort">
+    <SETUP NAME="begin"/>
+   </INTERFACE>
+   <DRIVER HEADER="i2cport.h">
+    <REQUIRE HEADER="core.h"/>
+    <REQUIRE HEADER="wire.h"/>
+    <ENUMERATION NAME="CLOCK">
+     <CONSTANT NAME="SLOW" VALUE="100000L"/>
+     <CONSTANT NAME="FAST" VALUE="400000L"/>
+    </ENUMERATION>
+    <METHOD DESC="Configure the SPI Hardware" NAME="setClock">
+     <PARAMETER DESC="I2C Clock Speed" DEFAULT="SLOW" TYPE="CLOCK" NAME="clock"/>
+    </METHOD>
+    <METHOD DESC="Operate as a slave with the specified address" NAME="setSlave">
+     <PARAMETER DESC="I2C slave address" TYPE="INTEGER" NAME="address"/>
+    </METHOD>
+    <METHOD DESC="Send 8 bit data" NAME="transmit">
+     <PARAMETER DESC="I2C address" TYPE="INTEGER" NAME="address"/>
+     <PARAMETER DESC="Send stop at end of message" DEFAULT="TRUE" TYPE="BOOLEAN" NAME="stop"/>
+     <PARAMETER DESC="Data to transmit" TYPE="LIST"/>
+    </METHOD>
+    <METHOD DESC="Receive 8 bit data" NAME="receive">
+     <PARAMETER DESC="I2C address" TYPE="INTEGER" NAME="address"/>
+     <PARAMETER DESC="Expected message length (bytes)" TYPE="INTEGER" NAME="length"/>
+     <PARAMETER DESC="Stop at end of message" DEFAULT="TRUE" TYPE="BOOLEAN" NAME="stop"/>
+     <PARAMETER DESC="Variables to receive data" BYREF="1" TYPE="LIST"/>
+    </METHOD>
+   </DRIVER>
+  </PERIPHERAL>
+  <PERIPHERAL DESC="UART" VALID="1" ENABLED="0" BUILTIN="1" TYPE="UART" ID="{1fb89938-f756-4d10-9767-84a686a80f96}" NAME="uart" FILE="Arduino Nano" EID="00000005" OPTIONAL="1">
+   <INTERFACE EXTERNAL="Uart" OBJECT="UART"/>
+   <DRIVER HEADER="uart.h">
+    <REQUIRE HEADER="core.h"/>
+    <REQUIRE HEADER="HardwareSerial.h"/>
+    <ENUMERATION NAME="BAUD">
+     <CONSTANT NAME="300" VALUE="300"/>
+     <CONSTANT NAME="1200" VALUE="1200"/>
+     <CONSTANT NAME="2400" VALUE="2400"/>
+     <CONSTANT NAME="4800" VALUE="4800"/>
+     <CONSTANT NAME="9600" VALUE="9600"/>
+     <CONSTANT NAME="19200" VALUE="19200"/>
+     <CONSTANT NAME="57600" VALUE="57600"/>
+     <CONSTANT NAME="115200" VALUE="115200"/>
+    </ENUMERATION>
+    <ENUMERATION NAME="CONFIG">
+     <CONSTANT NAME="SERIAL_5N1" VALUE="0x00"/>
+     <CONSTANT NAME="SERIAl_6N1" VALUE="0x02"/>
+     <CONSTANT NAME="SERIAL_7N1" VALUE="0x04"/>
+     <CONSTANT NAME="SERIAL_8N1" VALUE="0x06"/>
+     <CONSTANT NAME="SERIAL_5N2" VALUE="0x08"/>
+     <CONSTANT NAME="SERIAL_6N2" VALUE="0x0A"/>
+     <CONSTANT NAME="SERIAL_7N2" VALUE="0x0C"/>
+     <CONSTANT NAME="SERIAL_8N2" VALUE="0x0E"/>
+     <CONSTANT NAME="SERIAL_5E1" VALUE="0x20"/>
+     <CONSTANT NAME="SERIAL_6E1" VALUE="0x22"/>
+     <CONSTANT NAME="SERIAL_7E1" VALUE="0x24"/>
+     <CONSTANT NAME="SERIAL_8E1" VALUE="0x26"/>
+     <CONSTANT NAME="SERIAL_5E2" VALUE="0x28"/>
+     <CONSTANT NAME="SERIAL_6E2" VALUE="0x2A"/>
+     <CONSTANT NAME="SERIAL_7E2" VALUE="0x2C"/>
+     <CONSTANT NAME="SERIAL_8E2" VALUE="0x2E"/>
+     <CONSTANT NAME="SERIAL_5O1" VALUE="0x30"/>
+     <CONSTANT NAME="SERIAL_6O1" VALUE="0x32"/>
+     <CONSTANT NAME="SERIAL_7O1" VALUE="0x34"/>
+     <CONSTANT NAME="SERIAL_8O1" VALUE="0x36"/>
+     <CONSTANT NAME="SERIAL_5O2" VALUE="0x38"/>
+     <CONSTANT NAME="SERIAL_6O2" VALUE="0x3A"/>
+     <CONSTANT NAME="SERIAL_7O2" VALUE="0x3C"/>
+    </ENUMERATION>
+    <ENUMERATION NAME="BASE">
+     <CONSTANT NAME="DECIMAL" VALUE="10"/>
+     <CONSTANT NAME="BINARY" VALUE="2"/>
+     <CONSTANT NAME="OCTAL" VALUE="8"/>
+     <CONSTANT NAME="HEX" VALUE="16"/>
+    </ENUMERATION>
+    <FUNCTION DESC="Data Available">
+     <RETURN TYPE="BOOLEAN"/>
+    </FUNCTION>
+    <METHOD DESC="Configure the UART" NAME="setup">
+     <PARAMETER DESC="Baud rate" DEFAULT="9600" TYPE="BAUD" NAME="baud"/>
+     <PARAMETER DESC="Configuration" DEFAULT="SERIAL_8N1" TYPE="CONFIG" NAME="config"/>
+    </METHOD>
+    <!-- High level -->
+    <METHOD DESC="Input a string" NAME="input">
+     <PARAMETER DESC="Echo the typed characters" DEFAULT="TRUE" TYPE="BOOLEAN" NAME="echo"/>
+     <RETURN DESC="Input string" DEFAULT="input" TYPE="STRING" NAME="input"/>
+    </METHOD>
+    <METHOD DESC="Read delimited data" NAME="read">
+     <PARAMETER DESC="List of variables to read." BYREF="1" TYPE="LIST"/>
+    </METHOD>
+    <METHOD DESC="Write delimited data" NAME="write">
+     <PARAMETER DESC="List of strings or numbers to write" DEFAULT="" TYPE="LIST"/>
+    </METHOD>
+    <METHOD DESC="Print data without newline." NAME="print">
+     <PARAMETER DESC="List of strings or numbers to print" DEFAULT="" TYPE="LIST"/>
+    </METHOD>
+    <METHOD DESC="Print data with terminating newline." NAME="println">
+     <PARAMETER DESC="List of strings or numbers to print" DEFAULT="" TYPE="LIST"/>
+    </METHOD>
+    <METHOD DESC="Set the base to use for integer values." NAME="setBase">
+     <PARAMETER DESC="Number base" TYPE="BASE" NAME="base"/>
+    </METHOD>
+    <METHOD DESC="Set the number of places to use for floating point values." NAME="setPlaces">
+     <PARAMETER DESC="Number of decimal places" DEFAULT="2" TYPE="INTEGER" NAME="places"/>
+    </METHOD>
+    <!-- Low level -->
+    <METHOD DESC="Send a character code" NAME="send">
+     <PARAMETER DESC="Character code" DEFAULT="" TYPE="INTEGER" NAME="code"/>
+    </METHOD>
+    <METHOD DESC="Receive a character code" NAME="recv">
+     <RETURN DESC="Character code or -1 if none" DEFAULT="code" TYPE="INTEGER"/>
+    </METHOD>
+   </DRIVER>
+  </PERIPHERAL>
+ </HARDWARE>
+</PROJECT>
