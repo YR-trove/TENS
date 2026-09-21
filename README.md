@@ -27,12 +27,8 @@
 - [System Architecture](#-system-architecture)
 - [Hardware & Circuit Design](#-hardware--circuit-design)
 - [Firmware & Signal Generation](#-firmware--signal-generation)
-- [Mobile Application (Flutter)](#-mobile-application-flutter)
 - [3D CAD Enclosure & Manufacturing](#-3d-cad-enclosure--manufacturing)
-- [Prototype Showcase & Verification](#-prototype-showcase--verification)
 - [Repository Structure](#-repository-structure)
-- [Bill of Materials (BOM)](#-bill-of-materials-bom)
-- [Getting Started & Usage](#-getting-started--usage)
 - [Academic Supervision & Team](#-academic-supervision--team)
 
 ---
@@ -128,11 +124,6 @@ graph TD
 
 ## 🔌 Hardware & Circuit Design
 
-<div align="center">
-<img src="hardware/schematics/circuit_schematic.png" alt="Circuit Schematic" width="750"/>
-<p><em>Complete Proteus Schematic: Arduino Nano, HC-05 module, Transistor Driver Stage, and Step-Up Output Stage.</em></p>
-</div>
-
 ### Circuit Subsystems & Working Principle
 1. **Control Unit (Arduino Nano)**: The ATmega328P microcontroller operates at $16\text{ MHz}$, executing the waveform synthesis engine and supervising session safety.
 2. **Switching & Driver Stage**: Digital Pin 9 triggers driver transistors ($T_1$ and $T_2$). A trim potentiometer between stages serves as a hardware intensity attenuator.
@@ -171,23 +162,6 @@ TCCR1B |= (1 << CS11) | (1 << CS10); // Prescaler 64
 
 ---
 
-## 📱 Mobile Application (Flutter)
-
-The companion mobile app **"My Relief"** is built with Flutter and provides a modern, responsive user experience.
-
-<div align="center">
-<img src="hardware/cad/screenshots/11.PNG" alt="App Screens" width="240"/>
-<img src="hardware/cad/screenshots/11.1.PNG" alt="App Navigation" width="240"/>
-<img src="hardware/cad/screenshots/11.2.PNG" alt="App Body Selection" width="240"/>
-</div>
-
-- **Interactive Sliders**: Smooth frequency and pulse duration adjustments in real time.
-- **Anatomical Body Guide**: Visual maps for electrode placement on neck, shoulder, back, and knees.
-- **Bluetooth Manager**: Instant device discovery and auto-reconnect.
-- *Detailed mobile documentation is available in [`mobile-app/README.md`](file:///d:/TENS/mobile-app/README.md).*
-
----
-
 ## 🛠️ 3D CAD Enclosure & Manufacturing
 
 The enclosure was designed using parametric 3D CAD and fabricated via **Fused Deposition Modeling (FDM) 3D printing**.
@@ -201,24 +175,6 @@ The enclosure was designed using parametric 3D CAD and fabricated via **Fused De
 - **Integrated Mounting Bosses**: Internal screw bosses to secure the PCB, Arduino Nano, and step-up transformer.
 - **Port Cutouts**: Dedicated cutouts for electrode 3.5mm / snap output sockets, tactile power switch, and Mini-USB charging.
 - **Snap-fit & Screw Fastening**: Two-part clamshell case with rounded fillets for ergonomic handheld comfort.
-
----
-
-## 🏆 Prototype Showcase & Verification
-
-<div align="center">
-
-| Assembled Prototype | Electrode Output Stage |
-| :---: | :---: |
-| <img src="media/prototype_assembly.jpeg" alt="Prototype Assembly" width="360"/> | <img src="media/prototype_closeup.jpg" alt="Prototype Closeup" width="360"/> |
-
-<br/>
-
-### 🥇 1st Place Award Winner
-<img src="media/first_place_award.jpg" alt="First Place Award Certificate" width="500"/>
-<p><em>Recognized with the 1st Place Certificate of Excellence for Engineering Design and Implementation.</em></p>
-
-</div>
 
 ---
 
@@ -256,43 +212,6 @@ TENS/
     ├── prototype_closeup.jpg          # Prototype close-up photo
     └── first_place_award.jpg          # 1st place award certificate
 ```
-
----
-
-## 📋 Bill of Materials (BOM)
-
-| Component | Description | Qty | Function |
-| :--- | :--- | :---: | :--- |
-| **Arduino Nano** | ATmega328P, 16 MHz, Mini-USB | 1 | Microcontroller & PWM Generator |
-| **HC-05** | Bluetooth 2.0+EDR SPP Module | 1 | Wireless communication with smartphone |
-| **Step-Up Transformer** | Audio / Pulse step-up (1:10 turns ratio) | 1 | Voltage elevation ($3.7\text{V} \to 35\text{V}$) |
-| **BJT Transistors** | NPN / PNP Switching Transistors | 2 | Switched pulse driver stage |
-| **TP4056 Module** | 1A Lithium Battery Charging Board | 1 | Safe Li-ion USB charging |
-| **Li-ion Cell** | 3.7V 18650 / Polymer Battery | 1 | Portable system power source |
-| **Potentiometer** | 10k $\Omega$ Linear / Rotary Pot | 1 | Hardware intensity divider |
-| **Diodes & Resistors** | 1N4148 / 1N4007, Assorted Resistors | - | Flyback protection & biasing |
-| **Electrodes & Leads** | Self-adhesive hydrogel TENS pads | 2 | Cutaneous patient interface |
-| **3D Printed Enclosure** | PLA / PETG filament | 1 | Custom protective chassis |
-
----
-
-## 🚀 Getting Started & Usage
-
-### 1. Firmware Flashing
-1. Open [`firmware/arduino_tens/arduino_tens.ino`](file:///d:/TENS/firmware/arduino_tens/arduino_tens.ino) in the **Arduino IDE**.
-2. Select **Board**: `Arduino Nano`, **Processor**: `ATmega328P (Old Bootloader)` or `ATmega328P`.
-3. Connect the Nano via USB and click **Upload**.
-
-### 2. Mobile App Setup
-1. Ensure Flutter SDK is installed (`flutter doctor`).
-2. Pair your mobile phone with the **HC-05** Bluetooth module (Default PIN: `1234` or `0000`).
-3. Launch the **My Relief** application and connect to the paired HC-05 device.
-
-### 3. Starting a Therapy Session
-1. Attach electrodes to clean, dry skin around the target pain area.
-2. Select a therapy mode (e.g. *Conventional TENS*) or customize frequency ($1–200\text{ Hz}$) and pulse width ($50–400\ \mu\text{s}$).
-3. Set the desired session timer ($15–30\text{ minutes}$) and press **Start**.
-4. Adjust intensity using the rotary potentiometer until a strong but comfortable tingling sensation is achieved.
 
 ---
 
